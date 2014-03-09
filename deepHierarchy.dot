@@ -1,0 +1,81 @@
+digraph G {
+    items [shape=plaintext, label="Household items"];
+    things_you_wear [shape=plaintext, label="Things you wear"];
+    things_you_use [shape=plaintext, label="Things you use"];
+    /* LEVEL 1 */
+    items -> things_you_wear;
+    items -> things_you_use;
+    /* LEVEL 2*/
+    /* definitions */
+    clothes [shape=plaintext, label="Clothes"];
+    jewelry [shape=plaintext, label="Jewelry"];
+    electronics [shape=plaintext, label="Electronics"];
+    games_and_toys [shape=plaintext, label="Games and toys"];
+    utensils [shape=plaintext, label="Utensils"];
+    /* connections */
+    things_you_wear -> clothes;
+    things_you_wear -> jewelry;
+    things_you_use -> electronics;
+    things_you_use -> games_and_toys;
+    things_you_use -> utensils;
+    /* LEVEL 3 */
+    boys_and_men [shape=plaintext, label="Boys and men"];
+    girls [shape=plaintext, label="Girls"];
+    women [shape=plaintext, label="Women"];
+    babies [shape=plaintext, label="Babies"];
+    face_and_neck [shape=plaintext, label="Face and neck"];
+    hands [shape=plaintext, label="Hands"];
+    legs [shape=plaintext, label="Legs"];
+    living [shape=plaintext, label="Living"];
+    kitchen [shape=plaintext, label="Kitchen"];
+    outdoor [shape=plaintext, label="Outdoor"];
+    indoor [shape=plaintext, label="Indoor"];
+    cooking [shape=plaintext, label="Cooking"];
+    eating [shape=plaintext, label="Eating"];
+    liquids [shape=plaintext, label="Liquids"];
+    /* connections */
+    clothes -> boys_and_men;
+    clothes -> girls;
+    clothes -> women;
+    clothes -> babies;
+    jewelry -> face_and_neck;
+    jewelry -> hands;
+    jewelry -> legs;
+    electronics -> living;
+    electronics -> kitchen;
+    games_and_toys -> outdoor;
+    games_and_toys -> indoor;
+    utensils -> cooking;
+    utensils -> eating;
+    utensils -> liquids;
+    /* LEVEL 4 */
+    boys_and_men_items [shape=record, color=white, label="{Shorts | Shirt | Pants | Vest }"];
+    boys_and_men -> boys_and_men_items;
+    girls_items [shape=record, color=white, label="{Frock | Skirt | Sweat\ pants | Skort }"];
+    girls -> girls_items;
+    women_items [shape=record, color=white, label="{Dress | Blouse | Slip }"];
+    women -> women_items;
+    babies_items [shape=record, color=white, label="{Disposable\ diapers | Cloth\ diapers }"];
+    babies -> babies_items;
+    face_and_neck_items [shape=record, color=white, label="{Necklace | Headband | Earrings | Nose\ ring }"];
+    face_and_neck -> face_and_neck_items;
+    hands_items [shape=record, color=white, label="{Bangles | Rings }"];
+    hands -> hands_items;
+    legs_items [shape=record, color=white, label="{Toe\ rings | Anklet }"];
+    legs -> legs_items;
+    living_items [shape=record, color=white, label="{TV | DVD\ player | Speakers }"];
+    living -> living_items;
+    kitchen_items [shape=record, color=white, label="{Mixer | Toaster | Microwave }"];
+    kitchen -> kitchen_items;
+    outdoor_items [shape=record, color=white, label="{Cricket | Football }"];
+    outdoor -> outdoor_items;
+    indoor_items [shape=record, color=white, label="{XBox | Playing\ cards }"];
+    indoor -> indoor_items;
+    cooking_items [shape=record, color=white, label="{Spatula | Crockpot | Frying\ pan | Ladle }"];
+    cooking -> cooking_items;
+    eating_items [shape=record, color=white, label="{Plate | Glass | Bowl }"];
+    eating -> eating_items;
+    liquids_items [shape=record, color=white, label="{Pitcher | Water\ bottle }"];
+    liquids -> liquids_items;
+    
+}

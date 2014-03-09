@@ -1,0 +1,10 @@
+March, 2014.
+Aditya Vashistha
+Sam Sudar
+
+This is our final project repository for University of Washington's CSE 512,
+Data Visualization.
+
+To create the hierarchies in a png, run a command similar to the following:
+
+dot -Tpng shallowHierarchy.dot -o shallowHierarchy.png

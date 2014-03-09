@@ -1,0 +1,30 @@
+digraph G {
+    household_items [shape=plaintext, ordering=out, label="Household items"];
+    clothes [shape=plaintext, label="Clothes"];
+    electronics [shape=plaintext, label="Electronics"];
+    jewelry [shape=plaintext, label="Jewelry"];
+    games_and_toys [shape=plaintext, label="Games and toys"];
+    utensils [shape=plaintext, label="Utensils"];
+    // Connections
+    household_items -> clothes;
+    household_items -> jewelry;
+    household_items -> electronics;
+    household_items -> games_and_toys;
+    household_items -> utensils;
+    // And now the items themsevles.
+    clothes_items [shape=record, color=white, label=
+        "{Shorts | Shirt | Pants | Vest | Frock | Skirt | Sweat\ pants | Skort | Dress | Blouse | Slip | Disposable\ diapers | Cloth\ diapers }"];
+    clothes -> clothes_items;
+    electronics_items [shape=record, color=white, label=
+        "{ TV | DVD\ player | Speakers | Mixer | Toaster | Microwave }"];
+    electronics -> electronics_items;
+    jewelry_items [shape=record, color=white, label=
+        "{Necklace | Headband | Earrings | Nose\ ring | Bangles | Rings | Toe\ rings | Anklet }"];
+    jewelry -> jewelry_items;
+    games_and_toys_items [shape=record, color=white, label=
+        "{Cricket | Football | XBox | Playing\ cards }"];
+    games_and_toys -> games_and_toys_items;
+    utensils_items [shape=record, color=white, label=
+        "{Spatula | Crockpot | Frying\ pan | Ladle | Plate | Glass | Bowl | Pitcher | Water\ bottle }"];
+    utensils -> utensils_items;
+}
