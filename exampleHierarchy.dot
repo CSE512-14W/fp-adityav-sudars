@@ -1,0 +1,11 @@
+digraph G {
+    animals [shape=plaintext, ordering=out, label="Animals"];
+    mammals [shape=plaintext, label="Mammals"];
+    birds [shape=plaintext, label="Birds"];
+    mammals_items [shape=record, color=white, label="{Cat | Dog | Sheep}"];
+    birds_items [shape=record, color=white, label="{ Duck | Chicken }"];
+    animals -> mammals;
+    animals -> birds;
+    mammals -> mammals_items;
+    birds -> birds_items;
+}
