@@ -26,13 +26,13 @@ digraph G {
     face_and_neck [shape=plaintext, label="Face and neck"];
     hands [shape=plaintext, label="Hands"];
     legs [shape=plaintext, label="Legs"];
-    living [shape=plaintext, label="Living"];
+    living [shape=plaintext, label="Living room"];
     kitchen [shape=plaintext, label="Kitchen"];
     outdoor [shape=plaintext, label="Outdoor"];
     indoor [shape=plaintext, label="Indoor"];
     cooking [shape=plaintext, label="Cooking"];
     eating [shape=plaintext, label="Eating"];
-    liquids [shape=plaintext, label="Liquids"];
+    liquids [shape=plaintext, label="Drinking"];
     /* connections */
     clothes -> boys_and_men;
     clothes -> girls;
