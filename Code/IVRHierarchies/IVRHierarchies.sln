@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IVRHierarchies", "IVRHierarchies\IVRHierarchies.csproj", "{AAC5E88D-A1C6-4716-AA7F-322415DD439F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseIVRHierarchies", "DatabaseIVRHierarchies\DatabaseIVRHierarchies.csproj", "{10C9DB47-CEA7-481D-9591-F5A2F04AB835}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAC5E88D-A1C6-4716-AA7F-322415DD439F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC5E88D-A1C6-4716-AA7F-322415DD439F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC5E88D-A1C6-4716-AA7F-322415DD439F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC5E88D-A1C6-4716-AA7F-322415DD439F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C9DB47-CEA7-481D-9591-F5A2F04AB835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C9DB47-CEA7-481D-9591-F5A2F04AB835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C9DB47-CEA7-481D-9591-F5A2F04AB835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C9DB47-CEA7-481D-9591-F5A2F04AB835}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
