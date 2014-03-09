@@ -3,7 +3,7 @@
 
 <%
     DatabaseFunctions objectDatabaseFunctions = new DatabaseFunctions();
-    objectDatabaseFunctions.addAnalytics((String)Session["SessionId"], (String)Session["callerId"], "ListHierarchy.aspx", "Enter Page", null);
+    objectDatabaseFunctions.addAnalytics((String)Session["SessionId"], (String)Session["callerId"], "ListHierarchy.aspx", "Enter List", null);
      %>
 <?xml version="1.0" encoding="UTF-8" ?>
 <vxml version="2.1">
@@ -90,10 +90,10 @@
          </nomatch>
 
          <filled namelist="selection" mode="all">
-         <prompt> You pressed <value expr="selection"/></prompt>
-             <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
-         </filled>
+         <prompt> You selected <value expr="selection"/></prompt>
+             <submit next="CleanUp.aspx" namelist="selection"/>
+    <clear />
+                  </filled>
       </field>
    </form>
  </vxml>

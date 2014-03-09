@@ -4,14 +4,14 @@
 
 <%
     DatabaseFunctions objectDatabaseFunctions = new DatabaseFunctions();
-    objectDatabaseFunctions.addAnalytics((String)Session["SessionId"], (String)Session["callerId"], "DeepHierarchy.aspx", "Enter Page", null);
+    objectDatabaseFunctions.addAnalytics((String)Session["SessionId"], (String)Session["callerId"], "DeepHierarchy.aspx", "Enter Deep", null);
 %>
 
 
 <?xml version="1.0" encoding="UTF-8" ?>
 <vxml version="2.1">
- <var name="finalContentId" />
- 
+ <var name="finalContentId" expr="'-1'" />
+     
 <property name="inputmodes" value="dtmf"/> 
 <catch event="connection.disconnect.hangup">
     <submit next="CleanUp.aspx"/>
@@ -43,8 +43,8 @@
         </catch>
 
          <filled namelist="level0Selection" mode="all">
-            <assign name="finalContentId" expr ="level0Selection" />
-             <if cond="'1' == level0Selection">
+            <assign name="finalContentId" expr ="finalContentId + level0Selection" />
+            <if cond="'1' == level0Selection">
                 <goto next="#ThingsYouWear" />
             <elseif cond="'2' == level0Selection"/>
                 <goto next="#ThingsYouUse" />
@@ -497,11 +497,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Cloths" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -553,11 +554,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Cloths" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -607,12 +609,13 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Cloths" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
-            </if>
+           <submit next="CleanUp.aspx" namelist="selection"/>
+             </if>
             <clear/>
         </filled>           
       </field>
@@ -658,11 +661,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Cloths" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -713,11 +717,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Jewelry" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -764,11 +769,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Jewelry" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -816,11 +822,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Jewelry" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -869,11 +876,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Electronics" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -923,12 +931,13 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Electronics" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
-            </if>
+           <submit next="CleanUp.aspx" namelist="selection"/>
+             </if>
             <clear/>
         </filled>           
       </field>
@@ -974,11 +983,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#GamesAndToys" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -1025,11 +1035,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#GamesAndToys" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -1080,11 +1091,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Utensils" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -1133,11 +1145,12 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Utensils" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
+           <submit next="CleanUp.aspx" namelist="selection"/>
             </if>
             <clear/>
         </filled>           
@@ -1184,12 +1197,13 @@
          </nomatch>
          <filled namelist="selection" mode="all">
              <if cond="'0' == selection">
+                <assign name="finalContentId" expr ="finalContentId + selection" />
                 <goto next="#Utensils" />
              <else/>
+            <prompt> You selected <value expr="selection"/></prompt>
             <assign name="selection" expr ="finalContentId + selection" />
-              <submit next="Cleanup.aspx"
-              method="post" namelist="selection" />
-            </if>
+           <submit next="CleanUp.aspx" namelist="selection"/>
+             </if>
             <clear/>
         </filled>           
       </field>

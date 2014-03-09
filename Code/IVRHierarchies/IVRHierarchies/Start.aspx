@@ -36,7 +36,7 @@
    <form id="homeMenu">
       <field name="dtmfInput">
          <prompt bargein="true" timeout='3s'>
-          Welcome to our IVR design experiment. 
+          Welcome to our I V R design experiment. 
           For Experiment 1, Press 1. <break time='300ms' /> 
           For Experiment 2, Press 2. <break time='300ms' />
           For Experiment 3, Press 3. <break time='300ms' />
