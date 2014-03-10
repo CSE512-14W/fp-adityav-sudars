@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListHierarchy.aspx.cs" Inherits="IVRHierarchies.ListHierarchy" %>
+﻿d Page Language="C#" AutoEventWireup="true" CodeBehind="ListHierarchy.aspx.cs" Inherits="IVRHierarchies.ListHierarchy" %>
 <%@ Import Namespace="DatabaseIVRHierarchies" %>
 
 <%

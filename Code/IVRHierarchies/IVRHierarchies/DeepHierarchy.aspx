@@ -62,7 +62,7 @@
          
           <audio src='http://localhost/TalenthuntPrompts/HomeMenuCase1.wav' fetchtimeout='10s'>
                         To go back to previous menu anytime,  Press 0 <break time='300ms' />
-                        For <break time='100ms' /> cloths, Press 1. <break time='300ms' />
+                        For <break time='100ms' /> clothes, Press 1. <break time='300ms' />
                         For <break time='100ms' /> jewelry, Press 2. <break time='300ms' />                                  
           </audio> 
          </prompt>
@@ -216,7 +216,7 @@
              <elseif cond="'1' == selection" />
                 <goto next="#BoysAndMen" />
             <elseif cond="'2' == selection"/>
-                <goto next="#Grils" />
+                <goto next="#Girls" />
             <elseif cond="'3' == selection"/>
                 <goto next="#Women" />
             <elseif cond="'4' == selection"/>
@@ -736,7 +736,7 @@
           <audio src='http://localhost/TalenthuntPrompts/HomeMenuCase1.wav' fetchtimeout='10s'>
             To go back to previous menu anytime,  Press 0 <break time='300ms' />
             For <break time='100ms' /> Bangles, Press 1 <break time='300ms' />
-            For <break time='100ms' /> Ring, Press 2 <break time='300ms' />            
+            For <break time='100ms' /> Rings, Press 2 <break time='300ms' />            
           </audio> 
          </prompt>
 

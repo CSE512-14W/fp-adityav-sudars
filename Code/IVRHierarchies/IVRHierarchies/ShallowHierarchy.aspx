@@ -22,7 +22,7 @@
          <prompt bargein="true" timeout='3s'>
          
           <audio src='http://localhost/TalenthuntPrompts/HomeMenuCase1.wav' fetchtimeout='10s'>
-                        For <break time='100ms' /> cloths, Press 1. <break time='300ms' />
+                        For <break time='100ms' /> clothes, Press 1. <break time='300ms' />
                         For <break time='100ms' /> jewelry, Press 2. <break time='300ms' />          
                         For <break time='100ms' /> electronics, Press 3. <break time='300ms' />
                         For <break time='100ms' /> games and toys, Press 4. <break time='300ms' />
@@ -132,7 +132,7 @@
             For <break time='100ms' /> Earrrings, Press 3 <break time='300ms' />
             For <break time='100ms' /> Nose Ring, Press 4 <break time='300ms' />
             For <break time='100ms' /> Bangles, Press 5 <break time='300ms' /> 
-            For <break time='100ms' /> Ring, Press 6 <break time='300ms' />
+            For <break time='100ms' /> Rings, Press 6 <break time='300ms' />
             For <break time='100ms' /> Toe Rings, Press 7 <break time='300ms' />
             For <break time='100ms' /> Anklet, Press 8 <break time='300ms' />
             
