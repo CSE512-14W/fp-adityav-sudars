@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  18 MAR 2014 15:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  18 MAR 2014 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ivr-hierarchy-2014_samEdit.tex
-(./ivr-hierarchy-2014_samEdit.tex
+**ivr-hierarchy-2014_workingCopy.tex
+(./ivr-hierarchy-2014_workingCopy.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -333,8 +333,8 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 59.
 Package hyperref Info: Option `colorlinks' set `true' on input line 59.
 Package hyperref Info: Option `breaklinks' set `true' on input line 59.
 
-No file ivr-hierarchy-2014_samEdit.aux.
-\openout1 = `ivr-hierarchy-2014_samEdit.aux'.
+No file ivr-hierarchy-2014_workingCopy.aux.
+\openout1 = `ivr-hierarchy-2014_workingCopy.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
@@ -406,7 +406,7 @@ LaTeX Info: Redefining \ref on input line 66.
 LaTeX Info: Redefining \pageref on input line 66.
 LaTeX Info: Redefining \nameref on input line 66.
 \@outlinefile=\write3
-\openout3 = `ivr-hierarchy-2014_samEdit.out'.
+\openout3 = `ivr-hierarchy-2014_workingCopy.out'.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 78.
 
@@ -558,4 +558,4 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.185 ...h=0.9\columwidth]{fig_CorrectnessAndTime}
-                                   
+               
