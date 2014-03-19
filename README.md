@@ -2,6 +2,7 @@ Voice Interfaces for Visually Impaired and Low-Literate Communities in the Devel
 ==============
 Aditya Vashishta, Sam Sudar {adityav, sudars}@uw.edu
 
+## Abstract
 Millions of people cannot access services using conventional graphical user
 interfaces. These users include the visually impaired, the low-literate,
 speakers of tribal languages without font support, and those without access to
@@ -24,8 +25,8 @@ flat list of the leaf nodes.
 
 ![Deep Hierarchy](https://raw.github.com/CSE512-14W/fp-adityav-sudars/master/deepHierarchy.png)
 
-[Poster]
-[Final Paper]
+[Poster is available here]: https://github.com/CSE512-14W/fp-adityav-sudars/blob/master/poster-adityav-sudars.ppt?raw=true
+[Final Paper is availble here]: 
 
 ## Running Instructions
 
@@ -39,6 +40,14 @@ To create the hierarchy png files from the Graphviz dot files, run a command
 similar to the following:
 
 `dot -Tpng shallowHierarchy.dot -o shallowHierarchy.png`
+
+## Experiment
+
+We have conducted 3 between-subjects experiment design to compare three designs of IVR interfaces: linear list, shallow hierarchical interface, and deep hierarchical interface. We have used the \textit{Household items} dataset shown above. In our experiment, each structure is read aloud by the system. The list user interface is a sequential list of the household items. The shallow hierarchical interface has a branching factor of five and the depth of the tree is two (see figure 1). The branching factor for the deep hierarchical interface is up to four, and the depth of the tree is four (see figure 2). We have implemented the design structures in VoiceXML using Voxeo Prophecy and IVR Junction. We have also logged user's interaction with the IVR system while performing tasks to review the actions user took while performing the tasks.
+
+We recruited 18 participants (12 Male, 6 Female) to evaluate the three design structures. Participants were randomly divided into 3 groups where each group contained equal number of participants. Each participant performed five tasks, one after another. Each task consisted of selecting a target item from the assigned design structure. All participants searched for five target items (Shirt, Blouse, Rings, Football, and Plate) in the same order. 
+
+We have also analyzed the experiments and shared our analysis and recommendations in the paper. 
 
 ## Work Breakdown
 
