@@ -25,8 +25,9 @@ flat list of the leaf nodes.
 
 ![Deep Hierarchy](https://raw.github.com/CSE512-14W/fp-adityav-sudars/master/deepHierarchy.png)
 
-[Poster is available here]: https://github.com/CSE512-14W/fp-adityav-sudars/blob/master/poster-adityav-sudars.ppt?raw=true
-[Final Paper is availble here]: 
+
+Poster is available here: https://github.com/CSE512-14W/fp-adityav-sudars/blob/master/poster-adityav-sudars.ppt?raw=true
+Final Paper is availble here: https://github.com/CSE512-14W/fp-adityav-sudars/blob/master/final/paper-adityav-sudars.pdf 
 
 ## Running Instructions
 
@@ -35,6 +36,8 @@ SQLServer, and IIS. The code is written in C# and generates aspx files. The
 directories must be served using IIS, at which point the `Start.aspx` files may
 be run. These files are largely Voice XML files that define the IVR hierachy.
 You will have to point Express Talk at these pages to access the IVR.
+
+Please see the 7 page detailed documentation on how to set up our code and an IVR server on a Windows machine. The documentation is available here: https://github.com/CSE512-14W/fp-adityav-sudars/blob/master/Running%20Instructions.pdf
 
 To create the hierarchy png files from the Graphviz dot files, run a command
 similar to the following:
